@@ -4,3 +4,4 @@ aiofiles==0.7.0
 sqlalchemy==1.4.0
 rsa==4.7.2
 jinja2==3.0.1
+pymysql==1.0.2
