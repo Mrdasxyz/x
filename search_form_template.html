@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Data Form</title>
+    <style>
+        body {
+            background-color: #f0f0f0; 
+            font-family: Arial, sans-serif; 
+            text-align: center; 
+        }
+
+        img {
+            border-radius: 50%; 
+            margin-bottom: 20px; 
+        }
+
+        h2 {
+            color: #333; 
+        }
+
+        form {
+            max-width: 800px; 
+            margin: 0 auto; 
+            background-color: #fff; 
+            padding: 40px; 
+            border-radius: 16px; 
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); 
+        }
+
+        label {
+            display: block; 
+            margin-bottom: 10px; 
+            color: #555;
+        }
+
+        input {
+            width: 100%; 
+            padding: 20px; 
+            margin-bottom: 30px; 
+            border: 1px solid #ccc; 
+            border-radius: 8px; 
+            box-sizing: border-box; 
+        }
+
+        input[type="submit"] {
+            background-color: #4caf50; 
+            color: #fff; 
+            cursor: pointer; 
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049; 
+        }
+
+        p {
+            margin-top: 40px; 
+            color: #888; 
+        }
+    </style>
+
+</head>
+<body>
+    <h2>Enter Name to Search</h2>
+    <form action="/search" method="post">
+        <label for="search_name">Name:</label>
+        <input type="text" id="search_name" name="search_name" required><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br> <!-- Add this line for password input -->
+
+        <input type="submit" value="Search">
+    </form>
+    <p>Click <a href="/">here</a> to upload new data.</p>
+</body>
+</html>
